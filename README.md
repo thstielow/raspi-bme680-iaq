@@ -1,4 +1,4 @@
-# Simplifies IAQ calculation with the Bosch bme680
+# Simplified IAQ calculation with the Bosch bme680
 `raspi-bme680-iaq` implemets a basic indoor air quality (IAQ) calculation using the VOC sensitive gas resistance of the Bosch BME680 sensor circumventing the closed source Bosch [BSEC](https://www.bosch-sensortec.com/software-tools/software/bsec/) library.
 
 The IAQ calculation as a percentage value is inspired by the example in the [pimoroni bme60 linrary](https://github.com/pimoroni/bme680-python), where higher percentage values represent higher air quality. In contrast, the [BSEC library](https://www.bosch-sensortec.com/software-tools/software/bsec/) return an IAQ value between 0 and 400, where lower values represent higher air quality.
