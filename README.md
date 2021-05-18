@@ -28,6 +28,7 @@ The IAQ is then calculted as the ratio between `comp_gas` and the ceiling value 
 ## Physical Background
 The [BME680 datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf) states in Sec. 4.2 
 > The BME680 is a metal oxide-based sensor that detects VOCs by adsorption (and subsequent oxidation/reduction) on its sensitive layer.
+
 The sensor works through a metal-oxide surface, to which a voltage is applied in order to determine the resistance. By heating the oxide layer, activation energy is provided for reactions with air compounds. These reactions lead to a reduction in resistance, which then can be measured.
 
 By researching the web on such types of sensors it becomes apparent, that most of them have an exponential response to the concentration of VOCs, which is most commonly tested with ethanole. Further, the response to a given type of VOC depends strongly on the specific choice of metal oxide as well as the micro-structuring of the surface (see [this article](https://iopscience.iop.org/article/10.1088/1361-6501/aa7443/meta) for a detailed review). Moreover, some sensors are also reactive towards water molecules, which is also the case for the BME680, as described later in Sec. 4.2 of the [BME680 datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf). The choice on how to process the gas resistance readings was informed by these insights.
