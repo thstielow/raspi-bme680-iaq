@@ -1,7 +1,7 @@
 import numpy as np
 import bme680
 from time import *
-from bme680-IAQ import *
+from bme680IAQ import *
 
 
 
