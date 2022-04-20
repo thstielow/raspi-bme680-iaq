@@ -10,10 +10,10 @@ from bme680IAQ import *
 bme680_temp_offset = -4.5       #temperature oofset: depends on heating profile and external heat sources close to mounting point (i.e. Raspberry Pi SoC)
 sensor680 = bme680.BME680(i2c_addr=bme680.I2C_ADDR_SECONDARY)
 
-sensor680.set_humidity_oversample(bme680.OS_2X)
-sensor680.set_pressure_oversample(bme680.OS_4X)
-sensor680.set_temperature_oversample(bme680.OS_8X)
-sensor680.set_filter(bme680.FILTER_SIZE_3)
+sensor680.set_humidity_oversample(bme680.OS_1X)
+sensor680.set_pressure_oversample(bme680.OS_1X)
+sensor680.set_temperature_oversample(bme680.OS_1X)
+sensor680.set_filter(bme680.FILTER_SIZE_0)
 sensor680.set_gas_status(bme680.ENABLE_GAS_MEAS)
 
 sensor680.set_gas_heater_temperature(320)
