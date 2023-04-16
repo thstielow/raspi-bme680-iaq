@@ -34,7 +34,7 @@ R_gas = 0
 
 #data prompt function
 def prompt_data(temp, press, hum, Rgas, AQ):	
-	out_string = "{0}: {1:.2f}°C, {2:.2f}hPa, {3:.2f}%RH, {4:.1f}kOhm".format(strftime("%Y-%m-%d %H:%M:%S"),temp,press,hum,R_gas/1000)
+	out_string = "{0}: {1:.2f}°C, {2:.2f}hPa, {3:.2f}%RH, {4:.1f}kOhm".format(strftime("%Y-%m-%d %H:%M:%S"),temp,press,hum,Rgas/1000)
 	if AQ == None:
 		out_string += ", cal."
 	else:
